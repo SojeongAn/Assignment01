@@ -1,1 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Newsletter Template
+% LaTeX Template
+% Version 1.0 (09/03/14)
+%
+% Created by:
+% Bob Kerstetter (https://www.tug.org/texshowcase/) and extensively modified by:
+% Vel (vel@latextemplates.com)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\documentclass[10pt]{article} % The default font size is 10pt; 11pt and 12pt are alternatives
+
+\input{structure.tex} % Include the document which specifies all packages and structural customizations for this template
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR - FIRST PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{.35\linewidth} 
+\begin{mdframed}[style=sidebar,frametitle={}] % Sidebar box
+
+%-----------------------------------------------------------
+
+\hypertarget{assignment01}{\textbf{{\large assignment01}}}\\ 
+
+\hypertarget{contents}{\textbf{{\large In This Issue\ldots}}}
+\begin{enumerate}
+\item {Begin to use the source control website github}
+\item {Begin to use the source control website github}
+\item {Write a report about the utility git}
+\item {Submission to eclass}
+\end{enumerate}
+
+\centerline {\rule{.80\linewidth}{.10pt}} % Horizontal line
+\vspace{0.5cm}
+\textbf{Index}
+\begin{enumerate}
+\item {Create your Account !}
+\item {Create your first project}
+\item {Let's make README.md file}
+\item {Learn how to use the source control utility git}
+\item {Try to use github to your local computer}
+\end{enumerate}
+
+\centerline {\rule{.80\linewidth}{.10pt}} % Horizontal line
+
+%-----------------------------------------------------------
+\vspace{0.5cm}
+\captionof*{table}{Document Information}
+\begin{tabular}{llr}
+\toprule
+Title&Assignment01  \\
+Professor&Byung-Woo Hong \\
+Date&2018.09.19 \\
+Major&Computer Engineering\\
+studentID&2018120203 \\
+Name&So-jeong An  \\
+\bottomrule \\ \\
+\end{tabular} 
+%-----------------------------------------------------------
+\textbf{Contact Information:}\\
+Email: asj.sojeong2@gmail.com\\
+phone: 010 2237 4660\\
+Seoul, Korea\\
+\href{https://github.com/SojeongAn}\\
+
+%-----------------------------------------------------------
+\end{mdframed}
+\end{minipage}\hfill % End the sidebar mini page 
+%
+%----------------------------------------------------------------------------------------
+%	MAIN BODY - FIRST PAGE
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{.60\linewidth} % Mini page taking up 66% of the actual page
+
+\heading{Assignment01}{6pt} 
+
+This document is the first project in the Data Mining class. We have 19 more project ahead...
+I'll explain how to use the git in the order of index. You can check information of the document in the left sidebar. Additionally, the project links can be found in Index 3.
+
+\section{\label{sec:level1}{\large Create your Account !}}
+
+\begin{wrapfigure}[7]{l}[0pt]{0pt} % In-line figure with text wrapping around it
+\includegraphics[width=0.5\textwidth]{create_account.PNG}
+\end{wrapfigure}
+
+First, I'll try to create an account. Input your information into the username, email, and password as shown, and click the button below 'sign up for github'.After that let's login into github. It's done! \\
+%-----------------------------------------------------------
+\section{\label{sec:level2}{\large Create your first project}}
+
+\begin{wrapfigure}[10]{r}[0pt]{0pt} % In-line figure with text wrapping around it
+\includegraphics[width=0.35\textwidth]{repository.PNG}
+\end{wrapfigure}
+
+If we have succeeded so far, let's create a project. You will see Repositories after log in with the picture. Your name is on the left side of '/', and your project title is on the right side. 'Repository name' is your project name, and you can write a brief project description in the 'description'. 
+Description is optional. If you want to make project privately, you just select 'private'. But if you select 'private', \textbf{you have to pay. :(}
+
+\begin{wrapfigure}[6]{l}[0pt]{0pt}
+\includegraphics[width=0.3\textwidth]{Repositories.png}
+\end{wrapfigure}
+I made a project name of 'Assignment01'. I made it 'public' because I don't have money. Everyone can see my assignment01.\\
+
+%-----------------------------------------------------------
+\section{\label{sec:level3}{\large Let's make README.md file}}
+\begin{wrapfigure}[10]{r}[0pt]{0pt}
+\includegraphics[width=0.5\textwidth]{Readme.PNG}
+\end{wrapfigure}
+Just click the button 'create new file' to make a new file, and then create a 'README.md' file. You can create and modify other file. My 'README.md' file is the same as the picture. I wrote a cute emoticons. Here is my project URL(\href{https://github.com/SojeongAn/Assignment01}{Assignment01}). You can see my project just for free. The 'latex file' can also be created in this way.\\
+\end{minipage}
+%----------------------------------------------------------------------------------------
+%	MAIN BODY - SECOND PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{.95\linewidth} 
+%----------------------------------------------------------------------------------------
+\section{\label{sec:level4}{\large Learn how to use the source control utility git}}
+\textsl{GitHub} is a web-based hosting service for version control using Git. That means you can easily edit and check your code anywhere. Also it stores a "snapshot" of previous changes. So it is possible to restore to previous version. The git consists of three things.
+\begin{itemize}
+\item blob
+\item tree
+\item Commit
+\end{itemize}
+Commit checks the contents and what the previous commit is. This commit compares differences between a previous object with a present object. If something is different, add or commit.\\
+Another characteristic is that Git identifies everything as a hash. Files that are kept in the repository are also kept by key, the entire directory is kept as this checksum. That is reason that when you create the 'README' file, you will see a complex file name. Git stores the contents of the file. So When you store a file of same content that has different file name, it Indicates same value.\\
+%----------------------------------------------------------------------------------------
+\section{\label{sec:level5}{\large Try to use github to your local computer}}
+\begin{wrapfigure}[7]{l}[0pt]{0pt}
+\includegraphics[width=0.4\textwidth]{clone.PNG}
+\end{wrapfigure}
+Ok. Let's try to clone the data. After installing the git, import the data in the store via 'clone' like the picture below. Here's how to use it.\\
+\begin{center}
+\parbox[t]{.60\linewidth}{\textsl{git clone [github project address]}}\\
+\end{center}
+\vspace{1cm}
+
+\begin{wrapfigure}[8]{r}[0pt]{0pt}
+\includegraphics[width=0.3\textwidth]{commit.PNG}
+\end{wrapfigure}
+And then try to push the modified files at your local computer to github. First, overwrite the changes with the command 'git add'. Second, you can change the contents of the github repository through the command 'git comit -m "file name". The next picture is shown that the README.md file's content has been changed.\\
+If you want to import content that has been changed, you can use the command 'git full'. Also You can roll back easily if you want to turn it back. In this way, github is easy to manage and store code anywhere.
+
+\end{minipage}
+%----------------------------------------------------------------------------------------
+\end{document} 
